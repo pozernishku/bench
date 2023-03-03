@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "bench"
+version = "0.1.0"
+description = "Bench time project"
+authors = ["Anton Shyshko <pozernishku@gmail.com>"]
+readme = "README.md"
+#packages = [{include = "kek"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
